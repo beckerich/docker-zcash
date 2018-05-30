@@ -1,13 +1,13 @@
 version: '3'
 services:
-  btcpd:
+  zcashd:
     tty: true
     restart: always
-    image: hbeckeri/btcpd:1.0.12-1
+    image: hbeckeri/zcashd:1.1.1
     volumes:
      - ./data:/coin/data
-     - ./coin.conf:/root/.btcprivate/btcprivate.conf
-     - ./coin.conf:/coin/data/btcprivate.conf
+     - ./coin.conf:/root/.zcash/zcash.conf
+     - ./coin.conf:/coin/data/zcash.conf
     ports:
        - 3000:3000
        - 3001:3001
