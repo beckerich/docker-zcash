@@ -3,7 +3,7 @@ services:
   zcashd:
     tty: true
     restart: always
-    image: hbeckeri/zcashd:1.1.1
+    image: hbeckeri/zcashd:1.1.2
     volumes:
      - ./data:/coin/data
      - ./coin.conf:/root/.zcash/zcash.conf

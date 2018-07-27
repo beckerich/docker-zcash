@@ -9,7 +9,7 @@ RUN apt-get -y install \
 	zlib1g-dev wget curl bsdmainutils automake
 
 # Build
-RUN git clone https://github.com/zcash/zcash.git --branch v1.1.1 /tmp/coin-daemon
+RUN git clone https://github.com/zcash/zcash.git --branch v1.1.2 /tmp/coin-daemon
 WORKDIR /tmp/coin-daemon
 RUN ./zcutil/fetch-params.sh
 RUN ./zcutil/build.sh -j$(nproc)
